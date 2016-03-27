@@ -1,0 +1,26 @@
+{
+  "name": "coloor",
+  "version": "0.1.0",
+  "description": "Image preloading utility that uses dominant color",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krasimir/coloor.git"
+  },
+  "keywords": [
+    "preloader",
+    "image",
+    "dominant",
+    "color",
+    "lazy"
+  ],
+  "author": "Krasimir Tsonev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krasimir/coloor/issues"
+  },
+  "homepage": "https://github.com/krasimir/coloor"
+}
