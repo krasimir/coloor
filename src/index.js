@@ -28,13 +28,15 @@ var collectAllHTMLTags = function (html, callback) {
   }
   return matches;
 }
-var getDominantColor = function (file, callback) {
+var getDominantColors = function (file, callback) {
   if (dominantColorsCache[file]) {
     return callback(dominantColorsCache[file]);
   }
   try {
     palette(file, function (colors) {
-      callback(dominantColorsCache[file] = toHEX.apply(null, colors[0]));
+      callback(dominantColorsCache[file] = colors.map(function (color) { 
+        return toHEX.apply(null, color); 
+      }).join(','));
     });
   } catch(err) {
     callback();
@@ -60,8 +62,8 @@ var merge = function (html, files, tags, callback) {
         return false;
       });
       if (file) {
-        getDominantColor(file, function (color) {
-          replaceWith = tag.replace(/<(img|IMG)/, '<img data-coloor="' + color + '"');
+        getDominantColors(file, function (colors) {
+          replaceWith = tag.replace(/<(img|IMG)/, '<img data-coloor="' + colors + '"');
           html = html.replace(tag, replaceWith);
           process();
         });
