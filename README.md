@@ -21,3 +21,15 @@ Coloor(
   }
 );
 ```
+
+Input:
+
+```html
+<img src="photos/img.jpg" alt="description" />
+```
+
+Output:
+
+```html
+<img data-coloor="b9bcba" src="photos/img.jpg" alt="description" />
+```
