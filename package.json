@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/krasimir/coloor",
   "dependencies": {
-    "glob": "7.0.3",
-    "image-palette": "1.0.3"
+    "jimp": "0.2.21",
+    "color-thief-jimp": "2.0.2",
+    "glob": "7.0.3"
   }
 }
