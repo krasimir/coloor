@@ -1,10 +1,10 @@
 {
   "name": "coloor",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Image preloading utility that uses dominant color",
   "main": "src/index.js",
   "scripts": {
-    "test": "none"
+    "build": "uglifyjs ./src/preload/index.js -o ./lib/coloor.min.js"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,8 @@
     "jimp": "0.2.21",
     "color-thief-jimp": "2.0.2",
     "glob": "7.0.3"
+  },
+  "devDependencies": {
+    "uglify-js": "2.6.2"
   }
 }
