@@ -9,34 +9,34 @@
     return !!(elem.getContext && elem.getContext('2d'));
   }
   function preload (image) {
-    var originalSrc, previewImage, preloadImage, w, h, size;
+    var src, pi, li, w, h, size;
 
     if (!isCanvasSupported()) {
-      image.src = originalSrc;
+      image.src = src;
       return;
     }
 
-    originalSrc = image[ga]('data-coloor');
+    src = image[ga]('data-coloor');
     size = image[ga]('data-coloor-size').split('x');
     w = parseInt(size[0]);
     h = parseInt(size[1]);
-    previewImage = new Image();
-    preloadImage = new Image();
+    pi = new Image();
+    li = new Image();
 
-    previewImage.onload = function () {
+    pi.onload = function () {
       var canvas = d[ce]('canvas');
       var ctx = canvas.getContext('2d');
       canvas.width = w;
       canvas.height = h;
-      ctx.drawImage(previewImage, 0, 0, w, h);
+      ctx.drawImage(pi, 0, 0, w, h);
       image.src = canvas.toDataURL("image/png");
     }
-    previewImage.src = image[ga]('src');
+    pi.src = image[ga]('src');
 
-    preloadImage.onload = function () {
-      image.src = originalSrc;
+    li.onload = function () {
+      image.src = src;
     }
-    preloadImage.src = originalSrc;
+    li.src = src;
   }
 
   var images = d.querySelectorAll('img[data-coloor]');
