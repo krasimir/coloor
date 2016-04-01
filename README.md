@@ -4,6 +4,8 @@
 
 **Coloor** is a HTML preprocessor that decorates your `<img>` tags with `data-coloor` attributes containing a small base64 encoded version of your image. The idea is to quickly show the small image as a placeholder while the original one is loading.
 
+#### [Demo](http://krasimir.github.io/coloor/example/)
+
 ## Installation
 
 `npm i coloor -S`
