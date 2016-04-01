@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  font-family: Helvetica, Arial, Verdana;
+  font-size: 16px;
+  color: #000;
+}
+h1 {
+  font-size: 4em;
+  text-align: center;
+  font-weight: normal;
+}
+h1 small {
+  display: block;
+  font-size: 0.3em;
+  margin-top: 1em;
+  font-weight: bold;
+}
+section {
+  text-align: center;
+  margin-bottom: 6em;
+}
+p {
+  color: #333;
+  text-align: justify;
+  max-width: 400px;
+  margin: 0 auto;
+}
+a {
+  color: #000;
+  font-weight: bold;
+}
+hr {
+  border-top: none;
+  border-bottom: dotted 1px #999;
+  margin: 6em 0;
+}

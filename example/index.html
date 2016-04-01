@@ -3,15 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Coloor</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 <body>
+  <h1>Coloor<small>Image preloading utility</small></h1>
+  <p>
+    <a href="https://github.com/krasimir/coloor" target="_blank">Coloor</a> is a HTML preprocessor that decorates your <img> tags with data-coloor attributes containing a small base64 encoded version of your image. The idea is to quickly show the small image as a placeholder while the original one is loading.<br /><br />
+    In GitHub: <a href="https://github.com/krasimir/coloor" target="_blank">http://github.com/krasimir/coloor</a>
+  </p>
+  <hr />
   <section>
     <img data-coloor="./photos/img2.jpg" data-coloor-size="512x512" 
       src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAAklEQVR4AewaftIAAAAuSURBVGNc7Sf+38JDheHy8ecMLMZuOgyiGhwMBtw8DEzHd1xlePOAieHElqsMAPDWDODinKHYAAAAAElFTkSuQmCC"
       alt="image 2" />
       <img data-coloor="./photos/img3.png" data-coloor-size="700x467"  src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAAklEQVR4AewaftIAAAAhSURBVGMs91L/L6tjzPDh2SMGljsv/zB85njDcO7MdQYAlFcMOqOUSe8AAAAASUVORK5CYII=" alt="image 3">
       <img data-coloor="./photos/img.jpg" data-coloor-size="640x480"  src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAAklEQVR4AewaftIAAAAjSURBVAEaAOX/Ab24tf+42PMA09zsAAL6+fkACwH3AOPq8QDUQg74d7o9lAAAAABJRU5ErkJggg==" alt="image 1" />
+      <img data-coloor="./photos/green.jpg" data-coloor-size="500x499"  src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAAklEQVR4AewaftIAAAAuSURBVGNUt+D+r+vIxfDk8Q8GJi4uJoYvrxgYHt/8zcDEycXEIK/AxcDw/x8DAO3IC6w6YFW8AAAAAElFTkSuQmCC" alt="image4" />
   </section>
+  <hr />
   <!--<script src="../src/preload/index.js"></script>-->
   <script src="../lib/coloor.min.js"></script>
 </body>

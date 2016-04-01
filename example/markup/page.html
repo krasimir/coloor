@@ -3,15 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Coloor</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 <body>
+  <h1>Coloor<small>Image preloading utility</small></h1>
+  <p>
+    <a href="https://github.com/krasimir/coloor" target="_blank">Coloor</a> is a HTML preprocessor that decorates your <img> tags with data-coloor attributes containing a small base64 encoded version of your image. The idea is to quickly show the small image as a placeholder while the original one is loading.<br /><br />
+    In GitHub: <a href="https://github.com/krasimir/coloor" target="_blank">http://github.com/krasimir/coloor</a>
+  </p>
+  <hr />
   <section>
     <img
       src="./photos/img2.jpg"
       alt="image 2" />
       <IMG src="./photos/img3.png" alt="image 3">
       <img src="./photos/img.jpg" alt="image 1" />
+      <img src="./photos/green.jpg" alt="image4" />
   </section>
+  <hr />
   <!--<script src="../src/preload/index.js"></script>-->
   <script src="../lib/coloor.min.js"></script>
 </body>
