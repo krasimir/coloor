@@ -31,7 +31,11 @@ Input:
 Output:
 
 ```html
-<img data-coloor="../photos/img.jpg" data-coloor-size="640x480"  src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAAklEQVR4AewaftIAAAAjSURBVAEaAOX/Ab24tf+42PMA09zsAAL6+fkACwH3AOPq8QDUQg74d7o9lAAAAABJRU5ErkJggg==" alt="image 1" />
+<img 
+  data-coloor="../photos/img.jpg"
+  data-coloor-size="640x480" 
+  src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAAklEQVR4AewaftIAAAAjSURBVAEaAOX/Ab24tf+42PMA09zsAAL6+fkACwH3AOPq8QDUQg74d7o9lAAAAABJRU5ErkJggg=="
+  alt="image 1" />
 ```
 
 Then include [this code](https://github.com/krasimir/coloor/blob/master/lib/coloor.min.js) (895 bytes) on your page to get the preloading works:
