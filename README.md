@@ -2,7 +2,7 @@
 
 *(Inspired by [Dominant Colors for Lazy-Loading Images](https://manu.ninja/dominant-colors-for-lazy-loading-images) from [Manuel Wieser](https://twitter.com/manuelwieser))*
 
-**Coloor** is a HTML preprocessor that decorates your `<img>` tags with `data-coloor` attributes containing a small base64 encoded version of your image. We quickly load the small image as placeholder while the original one is loading.
+**Coloor** is a HTML preprocessor that decorates your `<img>` tags with `data-coloor` attributes containing a small base64 encoded version of your image. The idea is to quickly show the small image as a placeholder while the original one is loading.
 
 ## Installation
 
