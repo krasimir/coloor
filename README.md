@@ -1,4 +1,4 @@
-# Image preloading utility
+# Coloor - Image preloading utility
 
 *(Inspired by [Dominant Colors for Lazy-Loading Images](https://manu.ninja/dominant-colors-for-lazy-loading-images) from [Manuel Wieser](https://twitter.com/manuelwieser))*
 
