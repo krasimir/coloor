@@ -65,9 +65,15 @@ var getFileName = function (p) {
   return path.basename(p);
 }
 
+var typeOfQuotes = function (src, defaultType) {
+  var m = src[0].match(/src=('|")/);
+
+  return m ? m[1] : defaultType;
+}
+
 var merge = function (html, files, tags, callback) {
   (function process() {
-    var tag, replaceWith, src, srcFile, file;
+    var tag, replaceWith, src, srcFile, file, quote = '"';
 
     if (tags.length === 0) { return callback(html); }
 
@@ -82,14 +88,15 @@ var merge = function (html, files, tags, callback) {
         return false;
       }, false);
       if (file) {
+        quote = typeOfQuotes(src, quote);
         imageProcessing(file, function (data) {
           if (!data) { return process(); }
           replaceWith = tag
             .replace(src[1], data.base64)
             .replace(
               /<(img|IMG)/, 
-              '<img data-coloor="' + src[1] + '" ' +
-              'data-coloor-size="' + data.width + 'x' + data.height + '" '
+              '<img data-coloor=' + quote + src[1] + quote + ' ' +
+              'data-coloor-size=' + quote + data.width + 'x' + data.height + quote + ' '
             );
           html = html.replace(tag, replaceWith);
           process();
