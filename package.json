@@ -1,6 +1,6 @@
 {
   "name": "coloor",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "Image preloading utility that uses dominant color",
   "main": "src/preprocess/index.js",
   "scripts": {

@@ -12,6 +12,8 @@ var options = {
 
 var collectAllImages = function (dirs, callback) {
   var allFiles = [], p;
+
+  dirs = dirs.slice();
   (function process () {
     if (dirs.length === 0) {
       return callback(allFiles);
