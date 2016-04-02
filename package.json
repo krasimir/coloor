@@ -1,8 +1,8 @@
 {
   "name": "coloor",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Image preloading utility that uses dominant color",
-  "main": "src/index.js",
+  "main": "src/preprocess/index.js",
   "scripts": {
     "build": "uglifyjs ./src/preload/index.js -o ./lib/coloor.min.js"
   },
