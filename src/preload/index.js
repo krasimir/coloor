@@ -1,4 +1,4 @@
-(function () {
+function Coloor() {
 
   var d = document;
   var ce = 'createElement';
@@ -44,4 +44,4 @@
     preload(images[i]);
   }
 
-})();
+};Coloor();
