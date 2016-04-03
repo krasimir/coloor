@@ -6,7 +6,7 @@
 
 #### [Demo](http://krasimir.github.io/coloor/example/)
 
-(to simulate slow network connection use [Chrome's throttling](http://krasimirtsonev.com/blog/articles/coloor/demo.jpg))
+*(to simulate slow network connection use [Chrome's throttling](http://krasimirtsonev.com/blog/articles/coloor/demo.jpg))*
 
 ## Installation
 
