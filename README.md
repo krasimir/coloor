@@ -55,5 +55,5 @@ function Coloor(){var d=document;var ce="createElement";var ga="getAttribute";fu
 
 ## Notes
 
-* Notice that the snippet that you have to embed in your page starts with `function Color()`. The same function is called at the end. In some cases you may not have the decorated HTML at the first render. For example, if you deal with React (jsx) application the HTML is rendered by JavaScript and appears in the DOM with some delay. In this case you have to call `Coloor()` manually.
+* Notice that the snippet that you have to embed in your page starts with `function Coloor()`. The same function is called at the end. In some cases you may not have the decorated HTML at the first render. For example, if you deal with React (jsx) application the HTML is rendered by JavaScript and appears in the DOM with some delay. In this case you have to call `Coloor()` manually.
 
